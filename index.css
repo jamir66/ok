@@ -1,0 +1,55 @@
+body {
+  background-image: url("http://images4.fanpop.com/image/photos/24100000/Pokemon-pokemon-24187190-1920-1200.jpg");
+  background-color: #cccccc;
+}
+.navbar {
+    overflow: hidden; /* Hide overflow */
+    background-color: #333; /* Dark background color */
+}
+.navbar a {
+    float: left; 
+    display: block;
+    color: white;
+    text-align: center;
+     padding: 14px 20px;
+      text-decoration: none;
+}
+.navbar a.right {
+    float: right; 
+}
+navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.row { 
+    display: flex;
+    flex-wrap: wrap;
+}
+.side {
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+.main { 
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+@media (max-width: 700px) {
+    .row { 
+        flex-direction: column;
+    }
+}
+@media (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
+
+.footer {
+    padding: 20px; /* Some padding */
+    text-align: center; /* Center text*/
+    background: #ddd; /* Grey background */
+}
+
